@@ -131,6 +131,9 @@
 //     increaseAge: function () {
 //       this.age++;
 //     },
+//     addField: function (propertyName, propertyValue) {
+//       this[propertyName] = propertyValue;
+//     },
 //   };
 // }
 // let name = prompt("Enter your name");
@@ -140,6 +143,7 @@
 // console.log(user);
 
 // user.increaseAge();
+// user.addField("pets", null);
 // console.log(user);
 
 // ДЗ
@@ -326,15 +330,15 @@
 // }
 // console.log(student);
 
-const user = {
-  name: "Влад",
-  "second name": "Дракула",
-  age: 400,
-  marriage: false,
-};
-let userLength = 0;
-for (let number in user) {
-  userLength++;
-}
-user.length = userLength;
-console.log(user);
+// const user = {
+//   name: "Влад",
+//   "second name": "Дракула",
+//   age: 400,
+//   marriage: false,
+// };
+// let userLength = 0;
+// for (let number in user) {
+//   userLength++;
+// }
+// user.length = userLength;
+// console.log(user);
