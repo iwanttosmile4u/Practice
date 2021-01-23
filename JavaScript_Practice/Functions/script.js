@@ -50,16 +50,23 @@
  *
  * ДОП. ЗАДАНИЕ: Написатьвторую реали зацию, где элементы из которых нужно отбирать переданы в массиве.
  * */
-function getData() {
-  let res = [];
-  let type = arguments[0];
+// function getData() {
+//   let res = [];
+//   let type = arguments[0];
 
-  for (let i = 1; i < arguments.length; i++) {
-    if (typeof arguments[i] === type) {
-      res.push(arguments[i]);
-    }
-  }
-  return res;
-}
-let res = getData("number", 2, 3, 44, null, "5", 404, "909", "");
-console.log(res);
+//   for (let i = 1; i < arguments.length; i++) {
+//     if (typeof arguments[i] === type) {
+//       res.push(arguments[i]);
+//     }
+//   }
+//   return res;
+// }
+// let res = getData("number", 2, 3, 44, null, "5", 404, "909", "");
+// console.log(res);
+
+// function getData(arg) {
+//   return arg + "s";
+// }
+// let cup = prompt("Enter your number");
+// cup = getData(cup);
+// console.log(cup);
