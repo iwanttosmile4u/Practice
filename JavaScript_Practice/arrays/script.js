@@ -123,6 +123,17 @@
  * Return value: array with all of the dishes.
  * */
 
+// function getDishes() {
+//   let dish = prompt("Enter some dish");
+//   let dishes = [];
+//   while (dish !== "end") {
+//     dishes.push(dish);
+//     dish = prompt("Enter new dish");
+//   }
+//   return dishes;
+// }
+// console.log(getDishes());
+
 // function getData() {
 //   let dishes = [];
 //   let dish = prompt("Enter some dish");
@@ -177,3 +188,62 @@
 // }
 
 // console.log(b([1, 2, 3, 4, 5, 6]));
+
+// const people = [
+//   { name: "Vladilen", age: 25, budget: 40000 },
+//   { name: "Olena", age: 17, budget: 3400 },
+//   { name: "Ihor", age: 49, budget: 50000 },
+//   { name: "Myhailo", age: 15, budget: 1800 },
+//   { name: "Vasilisa", age: 24, budget: 25000 },
+//   { name: "Vika", age: 38, budget: 2300 },
+// ];
+// for (i = 0; i < people.length; i++) {
+//   console.log(people[i]);
+// }
+
+// forEach
+
+// people.forEach((person) => console.log(person));
+
+// map
+
+// const newPeople = people.map((person) => `${person.name} (${person.age})`);
+// console.log(newPeople);
+
+// filter
+
+// const adults = people.filter((person) => person.age >= 18);
+// console.log(adults);
+
+// reduce
+
+// let amount = 0;
+// for (let i = 0; i < people.length; i++) {
+//   amount = amount + people[i].budget;
+// }
+// console.log(amount);
+
+// const amount = people.reduce((total, person) => total + person.budget, 0);
+// console.log(amount);
+
+// Реализовать функцию фильтра массива по указанному типу данных. Задача должна быть реализована на языке javascript,
+// без использования фреймворков и сторонник библиотек (типа Jquery).
+
+// Технические требования:
+
+// Написать функцию filterBy(), которая будет принимать в себя 2 аргумента.
+// Первый аргумент - массив, который будет содержать в себе любые данные, второй аргумент - тип данных.
+// Функция должна вернуть новый массив, который будет содержать в себе все данные, к
+// оторые были переданы в аргумент, за исключением тех, тип которых был передан вторым аргументом.
+// То есть, если передать массив ['hello', 'world', 23, '23', null], и вторым аргументом передать 'string',
+// то функция вернет массив [23, null].
+
+function filterBy(array, dataType) {
+  let newArray = array.filter(function (element) {
+    if (typeof element !== typeof dataType) {
+      return true;
+    }
+  });
+  return newArray;
+}
+console.log(filterBy(["hello", "world", 23, "23", null], "string"));
