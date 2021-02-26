@@ -1,0 +1,17 @@
+{
+  "name": "my-first-npm-node-project",
+  "version": "1.0.0",
+  "description": "This is my first project with npm and node js",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "author": "Tania",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.5.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
