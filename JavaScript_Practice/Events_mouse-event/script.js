@@ -21,10 +21,32 @@
  * by the clicking on it. Every color should be random, transparent and white are not included in the list of colors.
  */
 
+/*TASK - 4
+ * There is a button 'Change color' next ot the 100px square. Create a function, that will change the color of the square randomly, by the clicking on the button, not on the square.
+ */
+
 function getRandomColor() {
-  let firstColor = Math.floor(Math.random() * 255);
-  let secondColor = Math.floor(Math.random() * 255);
-  let thirdColor = Math.floor(Math.random() * 255);
-  return `rgb(${firstColor}), ${secondColor}, ${thirdColor}`;
+  const firstColor = Math.floor(Math.random() * 255);
+  const secondColor = Math.floor(Math.random() * 255);
+  const thirdColor = Math.floor(Math.random() * 255);
+  return `rgb(${firstColor}, ${secondColor}, ${thirdColor})`;
 }
-console.log(getRandomColor());
+
+const createElement = (tagName, styles, text, handleClick = () => null) => {
+  const elem = document.createElement(tagName);
+  elem.style.cssText = styles;
+  if (text) {
+    elem.textContent = text;
+  }
+  elem.addEventListener("click", handleClick);
+  return elem;
+};
+const square = createElement(
+  "div",
+  "width: 300px; height: 300px; background: #f0f;",
+  ""
+);
+const btn = createElement("button", "", "Click me", () => {
+  square.style.background = getRandomColor();
+});
+document.body.prepend(square, btn);
