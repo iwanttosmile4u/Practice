@@ -73,29 +73,57 @@
  * It means that you need to change only the amount of 'Coffee' and it should be 17 now.
  * */
 
-function askProductName(productsList) {
-  let productName = prompt("Enter some product").toLowerCase();
-  const noMatches = () => {
-    for (let i = 0; i < productName.length; i++) {
-      if (productsList[i].textContent.toLowerCase().includes(productName)) {
-        return false;
-      }
-    }
-    return true;
-  };
-  while (noMatches()) {
-    productName = prompt("Enter correct product").toLowerCase();
-  }
-  return productName;
-}
-const replaceAmount = () => {
-  const products = [...document.querySelectorAll(".storage-item")];
-  let productName = askProductName(products);
-  const newAmount = prompt("How many?");
-  const productLi = products.find((pr) =>
-    pr.textContent.toLowerCase().includes(productName)
-  );
-  console.log(productLi, productName);
-  productLi.textContent = `${productName} - ${newAmount}`;
-};
-replaceAmount();
+// function askProductName(productsList) {
+//   let productName = prompt("Enter some product").toLowerCase();
+//   const noMatches = () => {
+//     for (let i = 0; i < productName.length; i++) {
+//       if (productsList[i].textContent.toLowerCase().includes(productName)) {
+//         return false;
+//       }
+//     }
+//     return true;
+//   };
+//   while (noMatches()) {
+//     productName = prompt("Enter correct product").toLowerCase();
+//   }
+//   return productName;
+// }
+// const replaceAmount = () => {
+//   const products = [...document.querySelectorAll(".storage-item")];
+//   let productName = askProductName(products);
+//   const newAmount = prompt("How many?");
+//   const productLi = products.find((pr) =>
+//     pr.textContent.toLowerCase().includes(productName)
+//   );
+//   console.log(productLi, productName);
+//   productLi.textContent = `${productName} - ${newAmount}`;
+// };
+// replaceAmount();
+
+// const ul = document.getElementsByTagName("ul");
+// console.log(ul);
+
+// const li = document.getElementsByClassName("storage-item");
+// console.log(li);
+
+// const firstItem = document.getElementById("first-item");
+// consile.log(firstItem);
+
+// const listItems = document.querySelectorAll(".storage-item");
+// console.log(listItems);
+
+// const listItem = document.querySelector(".storage-item");
+// console.log(listItem);
+
+// console.log(listItem.innerText);
+// console.log(listItem.innerHTML);
+
+// console.log(ul.innerText);
+
+// listItem.innerText = "<span>Span here</span>";
+// listItem.innerHTML = "<span>Span here</span>";
+
+// console.log(listItem.outerHTML);
+
+const listItem = document.querySelectorAll(".storage-item")[4];
+listItem.classList.add("active");
