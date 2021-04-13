@@ -70,3 +70,83 @@
 // let cup = prompt("Enter your number");
 // cup = getData(cup);
 // console.log(cup);
+
+// function argsLength() {
+//   return arguments.length;
+// }
+// console.log(argsLength(1, "as"));
+
+// function count(start, end) {
+//   if (start > end) {
+//     console.log("Error! Counting is unreal");
+//     return;
+//   } else if (start === end) {
+//     console.log("Error! There is nothing to count");
+//     return;
+//   } else {
+//     console.log("Counting begin");
+//   }
+//   for (let counter = start; counter <= end; counter++) {
+//     console.log(counter);
+//   }
+//   console.log("Counting finish");
+// }
+// count(5, 8);
+
+// return  пишемо, щоб не доходити до циклу
+
+// function countAdvanced(start, end, thirdParam) {
+//   if (arguments.length === 3) {
+//     if (
+//       start &&
+//       !isNaN(+start) &&
+//       end &&
+//       !isNaN(+end) &&
+//       thirdParam &&
+//       !isNaN(+thirdParam)
+//     ) {
+//       if (start > end) {
+//         console.log("Error! Counting is unreal");
+//         return;
+//       } else if (start === end) {
+//         console.log("Error! There is nothing to count");
+//         return;
+//       } else {
+//         console.log("Counting begin");
+//       }
+
+//       for (let counter = start; counter <= end; counter++) {
+//         if (counter % thirdParam === 0) {
+//           console.log(counter);
+//         }
+//       }
+
+//       console.log("Counting finish");
+//     } else {
+//       console.log("Enter the number");
+//     }
+//   } else {
+//     console.log("Error! Enter the third number");
+//   }
+// }
+// countAdvanced(5, 15, 25);
+
+// function summArgs() {
+//   let summ = 0;
+//   if (arguments.length < 2) {
+//     console.log("Error! Not enough arguments");
+//     return;
+//   } else {
+//     for (let arg = 0; arg < arguments.length; arg++) {
+//       arguments[arg];
+//       if (!isNaN(+arguments[arg]) && typeof arguments[arg] === "number") {
+//         summ += arguments[arg];
+//       } else {
+//         console.log(`Index ${arguments[arg]} element ${arg} is not a number`);
+//         return;
+//       }
+//     }
+//     return summ;
+//   }
+// }
+// console.log(summArgs(1, 2, 3, 4, 5, true, 7, 8));
