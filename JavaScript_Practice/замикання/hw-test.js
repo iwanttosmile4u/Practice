@@ -27,3 +27,29 @@ const books = [
     name: "Дед Снегур и Морозочка",
   },
 ];
+
+const container = document.getElementById("root");
+
+function renderItem({ author, name, price }) {
+  if (!author) {
+    throw new TypeError("Author doesn`t exist!");
+  }
+  if (!name) {
+    throw new TypeError("Name of book doesn`t exist!");
+  }
+  if (!price) {
+    throw new TypeError("Price doesn`t exist!");
+  }
+  container.insertAdjacentHTML(
+    "afterbegin",
+    `<ul><li>${author}</li><li>${name}</li><li>${price}</li></ul>`
+  );
+}
+
+books.forEach((elem) => {
+  try {
+    renderItem(elem);
+  } catch (err) {
+    console.error(err.message);
+  }
+});
