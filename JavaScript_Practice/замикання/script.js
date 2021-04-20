@@ -67,30 +67,78 @@
  * Список материалов ножек - метал, дуб, ясень, МДФ, мрамор
  */
 
-function Table(name, polki, size, deskMaterial, legsMaterial) {
-  const deskMaterials = [
-    "дуб",
-    "ясень",
-    "мрамор",
-    "мрамор с инкрустрацией",
-    "мрамор с подогревом",
-    "МДФ",
-  ];
-  const legsMaterials = ["метал", "дуб", "ясень", "МДФ", "мрамор"];
-  if (
-    !size ||
-    !size.x ||
-    !size.y ||
-    !Number.isInteger(size.x) ||
-    !Number.isInteger(size.y) ||
-    size.x < 0 ||
-    size.y < 0
-  ) {
-    throw new TypeError("wrong size");
-  }
-  const resultMaterials = deskMaterials.includes(deskMaterial);
-  if (!resultMaterials) {
-    throw new TypeError("wrong name of material");
-  }
-}
-const someTable = new Table("ghghg", 2, null);
+// function Table(name, polki, size, deskMaterial, legsMaterial) {
+//   const deskMaterials = [
+//     "дуб",
+//     "ясень",
+//     "мрамор",
+//     "мрамор с инкрустрацией",
+//     "мрамор с подогревом",
+//     "МДФ",
+//   ];
+//   const legsMaterials = ["метал", "дуб", "ясень", "МДФ", "мрамор"];
+//   if (
+//     !size ||
+//     !size.x ||
+//     !size.y ||
+//     !Number.isInteger(size.x) ||
+//     !Number.isInteger(size.y) ||
+//     size.x < 0 ||
+//     size.y < 0
+//   ) {
+//     throw new TypeError("wrong size");
+//   }
+//   const resultMaterials = deskMaterials.includes(deskMaterial);
+//   if (!resultMaterials) {
+//     throw new TypeError("wrong name of material");
+//   }
+// }
+// const someTable = new Table("ghghg", 2, null);
+
+// try {
+//   alert("Start block with try");
+//   lalala;
+//   alert("End block with try");
+// } catch (err) {
+//   alert("Error");
+// }
+
+// setTimeout(function () {
+//   try {
+//     noSuchVariable;
+//   } catch {
+//     alert("Error is detected");
+//   }
+// }, 1000);
+
+// let json = "{incorrect JSON}";
+// try {
+//   let user = JSON.parse(json);
+//   alert(user.name);
+// } catch (err) {
+//   alert("Sorry, we have some mistake in data");
+//   alert(err.name);
+//   alert(err.mssage);
+// }
+
+// let error = new Error("Some error");
+// alert(error.name);
+// alert(error.message);
+
+// try {
+//   JSON.parse("{bad JSON}");
+// } catch (err) {
+//   alert(err.name);
+//   alert(err.message);
+// }
+
+// let json = '{"age": 30}';
+// try {
+//   let user = JSON.parse(json);
+//   if (!user.name) {
+//     throw new SyntaxError("Field without name");
+//   }
+//   alert(user.name);
+// } catch (err) {
+//   alert("JSON Error: " + err.message);
+// }
