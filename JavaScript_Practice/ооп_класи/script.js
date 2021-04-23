@@ -120,24 +120,75 @@
 // }
 // let cat = new Cat({ name: "Cat", age: 5, hasTail: true, color: "black" });
 
-class Component {
-  constructor(selector) {
-    this.$el = document.querySelector(selector);
-  }
-  hide() {
-    this.$el.style.display = "none";
-  }
-  show() {
-    this.$el.style.display = "block";
-  }
-}
-class Box extends Component {
-  constructor(options) {
-    super(options.selector);
-    this.$el.style.width = this.$el.style.height = options.size + "px";
-    this.$el.style.background = options.color;
-  }
-}
+// class Component {
+//   constructor(selector) {
+//     this.$el = document.querySelector(selector);
+//   }
+//   hide() {
+//     this.$el.style.display = "none";
+//   }
+//   show() {
+//     this.$el.style.display = "block";
+//   }
+// }
+// class Box extends Component {
+//   constructor(options) {
+//     super(options.selector);
+//     this.$el.style.width = this.$el.style.height = options.size + "px";
+//     this.$el.style.background = options.color;
+//   }
+// }
 
-const box1 = new Box({ selector: "#box1", size: 100, color: "red" });
-const box2 = new Box({ selector: "#box2", size: 120, color: "blue" });
+// const box1 = new Box({ selector: "#box1", size: 100, color: "red" });
+// const box2 = new Box({ selector: "#box2", size: 120, color: "blue" });
+
+// class GuessGame {
+//   constructor(selector, { from, to }) {
+//     this.selector = selector;
+//     this.rangeFrom = from;
+//     this.rangeTo = to;
+//   }
+
+//   play() {
+//     this.number = this.getRandomNumber();
+//     this.elements = {
+//       input: document.createElement("input"),
+//       btn: document.createElement("button"),
+//     };
+//     const container = document.querySelector(this.selector);
+//     container.innerHtml = "";
+//     container.append(this.elements.input);
+//     container.append(this.elements.btn);
+//     this.elements.btn.textContent = "Play";
+//     this.elements.btn.style.margin = "0 0 0 10px";
+//     this.elements.input.placeholder = "Enter some number";
+//     this.elements.input.type = "number";
+//     this.elements.btn.addEventListener("click", () => {
+//       alert(this.compare(this.elements.input.value));
+//     });
+//   }
+
+//   getRandomNumber() {
+//     return Math.ceil(
+//       Math.random() * (this.rangeTo - this.rangeFrom) + this.rangeFrom
+//     );
+//   }
+
+//   compare(num) {
+//     num = +num;
+//     if (num === this.number) {
+//       return "You win!";
+//     }
+
+//     if (num > this.number) {
+//       return "You should try a smaller one!";
+//     }
+
+//     if (num < this.number) {
+//       return "You should try a bigger one!";
+//     }
+//   }
+// }
+
+// const game = new GuessGame("div.the-game", { from: -9, to: 6 });
+// game.play();
