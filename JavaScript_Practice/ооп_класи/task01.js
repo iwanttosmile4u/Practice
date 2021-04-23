@@ -188,7 +188,7 @@ class Employee {
 }
 
 class Programmer extends Employee {
-  #_language;
+  #_lang;
   constructor(name, age, salary, lang) {
     super(name, age, salary);
     this.#_lang = lang;
