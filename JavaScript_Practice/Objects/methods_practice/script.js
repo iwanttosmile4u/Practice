@@ -82,27 +82,22 @@
 * метод startSale принимает аргумент - размер скидки, одним числом без знака процентов.
 * */
 
+// function createProductCart(title, code, price, description) {
+//     let productCard = {
+//         name: title,
+//         code: code,
+//         price: price,
+//         description: description,
+//         getDiscount: function (discount) {
+//             this.price -= (this.price/100) * sale;
+//         }
+//     }
+//     return productCard;
+//   }
+//   const pizza = createProductCart
 
+//   ('Spicy Margarita', 785584, 244, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, voluptates.');
 
-function createProductCart(title, code, price, description) {
-    let productCard = {
-        name: title,
-        code: code,
-        price: price,
-        description: description,
-        getDiscount: function (discount) {
-            this.price -= (this.price/100) * sale;
-        }
-    }
-    return productCard;
-  }
-  const pizza = createProductCart 
-  
-  
-  
-  ('Spicy Margarita', 785584, 244, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, voluptates.');
-  
-  console.log(pizza.price); 
-  pizza.startSale(50);
-  console.log(pizza.price); 
-  
+//   console.log(pizza.price);
+//   pizza.startSale(50);
+//   console.log(pizza.price);
