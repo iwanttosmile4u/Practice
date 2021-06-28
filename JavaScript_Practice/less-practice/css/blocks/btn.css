@@ -1,0 +1,17 @@
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0.5em 1em;
+  font-family: inherit;
+  font-size: 1rem;
+  color: black;
+  background-color: #ccc;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.btn--primary {
+  background-color: #3c30a5;
+}
+.btn--secondary {
+  background-color: yellow;
+}
