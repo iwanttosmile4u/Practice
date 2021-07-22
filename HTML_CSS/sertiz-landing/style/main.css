@@ -111,6 +111,10 @@
   line-height: 22px;
 }
 
+.menu-list > li:hover {
+  color: #f1b128;
+}
+
 .nav-line {
   width: 79%;
   margin: 22px 166px 0 auto;
