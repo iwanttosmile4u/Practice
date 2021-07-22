@@ -8,6 +8,12 @@
   box-sizing: border-box;
 }
 
+.wrapper {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
 .header-title,
 .header-slogan {
   text-transform: uppercase;
@@ -106,12 +112,17 @@
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
   margin: 0 30px;
-  color: #3d3d3d;
   font-size: 18px;
   line-height: 22px;
 }
 
-.menu-list > li:hover {
+.menu-list-item > a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #3d3d3d;
+}
+
+.menu-list-item > a:hover {
   color: #f1b128;
 }
 
