@@ -1,0 +1,118 @@
+.header {
+  background-image: url("../images/header-bg.png");
+  height: 900px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: #ffffff;
+  padding: 528px 542px 133px 225px;
+  box-sizing: border-box;
+}
+
+.header-title,
+.header-slogan {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 59px;
+}
+
+.header-description {
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.header-slogan {
+  font-weight: bold;
+  font-size: 46px;
+  line-height: 66px;
+  border: 1px solid #ffffff;
+  margin-top: 22px;
+}
+
+.header-slogan > div {
+  display: inline-block;
+}
+
+.slogan-we {
+  color: #f48e0b;
+  border-right: 2px solid #f48e0b;
+}
+
+.slogan-we,
+.slogan-design {
+  padding: 8px 10px;
+  box-sizing: border-box;
+}
+
+.awards-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  box-sizing: border-box;
+}
+
+.awards-block-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.awards-block-info {
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  color: #4d4943;
+  margin-top: 28px;
+}
+
+.awards-block-title,
+.awards-block-info {
+  text-align: center;
+}
+
+.awards-block-line {
+  width: 4%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #f48e0b;
+  margin: 50px 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: center;
+  margin-left: 240px;
+  margin-top: 5px;
+}
+
+.menu-list > li {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  margin: 0 30px;
+  color: #3d3d3d;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.nav-line {
+  width: 79%;
+  margin: 22px 166px 0 auto;
+  border: 1px solid #f48e0b;
+}
