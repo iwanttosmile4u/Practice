@@ -1,5 +1,5 @@
 .header {
-  background-image: url("../images/header-bg.png");
+  background-image: url("../images/backgrounds/header-bg.png");
   height: 900px;
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -130,4 +130,150 @@
   width: 79%;
   margin: 22px 166px 0 auto;
   border: 1px solid #f48e0b;
+}
+
+.services {
+  margin-bottom: 124px;
+}
+
+.services > .services-title,
+.services-description {
+  text-align: center;
+}
+
+.services-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 22px;
+  color: #333333;
+  text-transform: uppercase;
+  margin: 128px 0 2px;
+}
+
+.services-description {
+  font-family: "Lato", sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  color: #4d4943;
+}
+
+.services-content {
+  margin-top: 107px;
+  display: flex;
+  justify-content: center;
+}
+
+.services-content-img {
+  width: 42%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services-content-img-block > .services-img-title {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  align-items: center;
+  color: #ffffff;
+  background-color: #333333;
+  display: inline-block;
+  padding: 14px 17px;
+}
+
+.services-content-img-block {
+  position: relative;
+  margin-right: 30px;
+  margin-bottom: 22px;
+}
+
+.services-img-title {
+  position: absolute;
+  bottom: 11px;
+  left: 17px;
+}
+
+.services-content-info {
+  width: 38%;
+  display: flex;
+  flex-direction: column;
+}
+
+.services-content-info > .services-content-info-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #333333;
+  margin-bottom: 22px;
+}
+
+.services-content-info-name2 {
+  color: #f48e0b;
+}
+
+.services-content-info-text1,
+.services-content-info-text2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 22px;
+  color: #505050;
+}
+
+.services-content-info-text2 {
+  margin-top: 12px;
+}
+
+.services-content-info-btn {
+  width: 176px;
+  height: 52px;
+  background: #f1ad1d;
+  border: none;
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  margin-top: 19px;
+  cursor: pointer;
+}
+
+.bg-head {
+  background-image: url("../images/backgrounds/second-bg-speed.png");
+  height: 380px;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg-head-title-block {
+  margin-bottom: 60px;
+}
+
+.bg-head > div {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.bg-head-title-block > span:nth-child(1n) {
+  color: #ffffff;
+}
+
+.bg-head-title-block > span:nth-child(2n) {
+  color: #f48e0b;
+}
+
+.bg-line {
+  width: 4%;
+  border: 1px solid #f48e0b;
+  margin: 0 auto;
 }
