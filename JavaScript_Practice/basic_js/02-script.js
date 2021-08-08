@@ -82,10 +82,10 @@
  *   - min number
  * */
 
-const firstNum = parseInt(prompt("Enter the first number"));
-const secondNum = parseInt(prompt("Enter the second number"));
-const thirdNum = parseInt(prompt("Enter the third number"));
+// const firstNum = parseInt(prompt("Enter the first number"));
+// const secondNum = parseInt(prompt("Enter the second number"));
+// const thirdNum = parseInt(prompt("Enter the third number"));
 
-console.log((firstNum + secondNum + thirdNum) / 3);
-console.log(Math.max(firstNum, secondNum, thirdNum));
-console.log(Math.min(firstNum, secondNum, thirdNum));
+// console.log((firstNum + secondNum + thirdNum) / 3);
+// console.log(Math.max(firstNum, secondNum, thirdNum));
+// console.log(Math.min(firstNum, secondNum, thirdNum));
