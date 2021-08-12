@@ -1,6 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
 import React, { Component } from "react";
+import { Header } from "./components/Header/Header";
+import { Inbox } from "./components/Inbox/Inbox";
+import { Footer } from "./components/Footer/Footer";
+
+const emails = [
+  { id: 1, topic: "Email 1 topic" },
+  { id: 2, topic: "Email 2 topic" },
+  { id: 3, topic: "Email 3 topic" },
+];
 
 class App extends Component {
   state = {
@@ -31,13 +40,13 @@ class App extends Component {
     const { title, user } = this.state;
     return (
       <div className="App">
-        <h2>{title}</h2>
-        <h3>Some other text</h3>
-        <div>{user.name}</div>
-        <div>{user.age}</div>
-        <button onClick={this.incrementAge}>Increment age</button>
-        <button onClick={this.updateTitle}>Update title</button>
-        {user.email && <div className="email">{user.email}</div>}
+        <Header title={title} user={user} />
+        <Inbox
+          incrementAge={this.incrementAge}
+          updateTitle={this.updateTitle}
+          emails={emails}
+        />
+        <Footer />
         {/* {user.cart.length === 0 && <div>Your cart: </div>}
         {!user.cart.length && <div>Your cart is empty</div>} */}
       </div>
