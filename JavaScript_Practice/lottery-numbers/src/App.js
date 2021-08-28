@@ -10,23 +10,13 @@ class App extends React.Component {
   };
 
   generateNumber = () => {
-    if (this.state.numbers.length >= 6) {
-      return;
-    }
-    const generatedNumber = Math.floor(Math.random() * 6) + 1;
-    if (
-      !this.state.numbers.includes(
-        generatedNumber && this.state.numbers.length < 6
-      )
-    ) {
-      this.setState({ numbers: [...this.state.numbers, generatedNumber] });
-    } else {
-      this.generateNumber();
-    }
-    // this.setState({ numbers: [...this.state.numbers, generatedNumber] });
+    const generatedNumber = Math.floor(Math.random() * 36) + 1;
+    this.setState({
+      numbers: [...this.state.numbers, generatedNumber],
+    });
   };
 
-  deleteNumber = (index) => {
+  deleteNumbers = (index) => {
     this.setState({
       numbers: this.state.numbers.filter((el, i) => i !== index),
     });
@@ -36,12 +26,8 @@ class App extends React.Component {
     const { numbers } = this.state;
     return (
       <div className="App">
-        <Button
-          content="Generate"
-          handleClick={this.generateNumber}
-          disabled={this.state.numbers.length === 6}
-        />
-        <Numbers numbers={numbers} deleteNumber={this.deleteNumber} />
+        <Button content="Generate" handleClick={this.generateNumber} />
+        <Numbers numbers={numbers} deleteNumbers={this.deleteNumbers} />
       </div>
     );
   }

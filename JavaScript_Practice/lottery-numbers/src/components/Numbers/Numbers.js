@@ -3,16 +3,13 @@ import Button from "../Button/Button";
 
 export default class Numbers extends Component {
   render() {
-    const { numbers, content, deleteNumber } = this.props;
-    const generatedNumbers = numbers.map((n, index) => (
-      <li key={index}>
-        {n} <Button content="X" handleClick={() => deleteNumber(index)} />
-      </li>
-    ));
-    return (
-      <div>
-        <ul>{generatedNumbers}</ul>
+    const { numbers, deleteNumbers } = this.props;
+    const numbersList = numbers.map((n, index) => (
+      <div key={index}>
+        {n}
+        <Button content="X" handleClick={() => deleteNumbers(index)} />
       </div>
-    );
+    ));
+    return <div>{numbersList}</div>;
   }
 }

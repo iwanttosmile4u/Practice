@@ -98,22 +98,22 @@
 //     operation = prompt ("Enter operation correctly");
 // }
 
-let userNumber = +prompt("Enter number");
-while (userNumber !== parseInt(userNumber)) {
-  userNumber = +prompt("Enter integer number");
-}
+// let userNumber = +prompt("Enter number");
+// while (userNumber !== parseInt(userNumber)) {
+//   userNumber = +prompt("Enter integer number");
+// }
 
-let countOfFoundNumbers = 0;
-for (let i = 1; i <= userNumber; i++) {
-  if (i % 5 === 0) {
-    countOfFoundNumbers++;
-    console.log(i);
-  }
-}
+// let countOfFoundNumbers = 0;
+// for (let i = 1; i <= userNumber; i++) {
+//   if (i % 5 === 0) {
+//     countOfFoundNumbers++;
+//     console.log(i);
+//   }
+// }
 
-if (!countOfFoundNumbers) {
-  console.log("Sorry, no numbers");
-}
+// if (!countOfFoundNumbers) {
+//   console.log("Sorry, no numbers");
+// }
 
 // Відповідь на теоретичне запитання:
 // Цикли дають змогу виконати один і той же шматок коду багато разів. Тобто це певний блок команд, які повторюються до того моменту,
