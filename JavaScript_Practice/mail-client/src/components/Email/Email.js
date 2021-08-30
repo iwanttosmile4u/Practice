@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import PropTypes from "prop-types";
 
 export default class Email extends Component {
   render() {
@@ -6,3 +7,7 @@ export default class Email extends Component {
     return <li>{email.topic}</li>;
   }
 }
+
+Email.propTypes = {
+  email: PropTypes.object.isRequired,
+};

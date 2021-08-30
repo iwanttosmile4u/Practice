@@ -7,8 +7,6 @@ export class Header extends React.Component {
       <div>
         <h2>{title}</h2>
         <h3>Some other text</h3>
-        <div>{user.name}</div>
-        <div>{user.age}</div>
       </div>
     );
   }
