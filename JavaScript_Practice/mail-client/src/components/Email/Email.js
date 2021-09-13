@@ -1,13 +1,21 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
+import Icon from "../Icon/Icon";
 
-export default class Email extends Component {
-  render() {
-    const { email } = this.props;
-    return <li>{email.topic}</li>;
-  }
-}
+const Email = ({ email }) => {
+  return (
+    <li>
+      {email.topic}
+      <Icon type="star" color="green" />
+      <Icon type="star" />
+      <Icon type="star" filled />
+      <Icon type="globe" />
+    </li>
+  );
+};
 
 Email.propTypes = {
   email: PropTypes.object.isRequired,
 };
+
+export default Email;

@@ -1,21 +1,24 @@
-import React, { Component } from 'react';
+import React, { useEffect } from "react";
 import "./Loader.css";
 
-export default class Loader extends Component {
+const Loader = () => {
+  // conponentDidMount() {
+  //     console.log("Loader - componentDidMount")
+  // }
 
-    // conponentDidMount() {
-    //     console.log("Loader - componentDidMount")
-    // }
+  // componentWillUnmount() {
+  //     console.log("Loader - componentWillUnmount")
+  // }
 
-    // componentWillUnmount() {
-    //     console.log("Loader - componentWillUnmount")
-    // }
+  useEffect(() => {
+    console.log("Mounted loader");
 
-    render() {
-        return (
-            <div className="loader">
-                Loading...
-            </div>
-        )
-    }
-}
+    return () => {
+      console.log("Unmounting loader");
+    };
+  }, []);
+
+  return <div className="loader">Loading...</div>;
+};
+
+export default Loader;
