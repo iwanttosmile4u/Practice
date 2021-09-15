@@ -10,13 +10,13 @@
 
 // Рекурсивний спосіб написання функції pow:
 
-function pow(x, n) {
-  //   if (n == 1) {
-  //     return x;
-  //   } else {
-  //     return x * pow(x, n - 1);
-  //   }
-  return n == 1 ? x : x * pow(x, n - 1);
-}
+// function pow(x, n) {
+//   //   if (n == 1) {
+//   //     return x;
+//   //   } else {
+//   //     return x * pow(x, n - 1);
+//   //   }
+//   return n == 1 ? x : x * pow(x, n - 1);
+// }
 
-alert(pow(2, 3));
+// alert(pow(2, 3));
