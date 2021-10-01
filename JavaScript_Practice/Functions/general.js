@@ -92,3 +92,13 @@
 // }
 
 // console.log(pow(x, n));
+
+// function showFullName(name, surname) {
+//   return name + " " + surname;
+// }
+
+// let result = showFullName(
+//   prompt("Enter your name"),
+//   prompt("Enter your surname")
+// );
+// console.log(result);
