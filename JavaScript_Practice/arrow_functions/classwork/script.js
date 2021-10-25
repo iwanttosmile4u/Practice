@@ -4,33 +4,28 @@ const date = document.getElementById("eventDate");
 const desc = document.getElementById("eventDesc");
 const btn = document.querySelector(".event-form button");
 
-const toUpperCase = (string) => {
-  let res = "";
-  let order = 0;
-
-  for (let i = 0; i < string.length; i++) {
-    order++;
-
-    if (order % 3 === 0) {
-      res += string[i].toUpperCase();
-    } else {
-      res += string[i];
-    }
-  }
-
-  return res;
-};
-
-function daysBefore = numberOfDays => {
-    let today = new Date();
-}
-
 function makeEventObject(title, date, desc) {
   console.log(title.value);
   console.log(date.value);
   console.log(desc.value);
 
-  let titleString = toUpperCase(title.value);
+  const makeTitle = (str) => {
+    let res = "";
+    for (let i = 0; i < str.length; i++) {
+      if ((i + 1) % 3 === 0) {
+        res += str[i].toUpperCase();
+      } else {
+        res += str[i];
+      }
+    }
+    return res;
+  };
+  const makeDateBefore = (dateStr) => {
+    return Math.round(
+      (new Date(dateStr).getTime() - Date.now()) / (24 * 60 * 60 * 1000)
+    );
+  };
+  const makeDescription = (str) => str.split("типа").join();
 
   /* ЗАДАНИЕ
    * реализовать код функции makeEventObject
@@ -46,9 +41,9 @@ function makeEventObject(title, date, desc) {
    * В решении нужно обязательно использовать стрелочные функции
    * */
   return {
-    title: titleString,
-    daysBefore: 10,
-    description: "lorem трель dolor gogi met",
+    title: makeTitle(title.value),
+    daysBefore: makeDateBefore(date.value),
+    description: makeDescription(desc.value),
   };
 }
 

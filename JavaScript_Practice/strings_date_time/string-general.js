@@ -67,3 +67,12 @@
 
 // console.log(truncate("Вот, что мне хотелось бы сказать на эту тему:", 10));
 // console.log(truncate("Всем привет!", 20));
+
+// const str = 'new \\ \n"String"';
+// console.log(str);
+// console.log(str.concat("!!"));
+// for (let index = 0; index < str.length; index++) {
+//   console.log(`${index}: ${str[index]}`);
+// }
+// console.log(str.indexOf("tr"));
+// console.log(str.lastIndexOf("tri"));
