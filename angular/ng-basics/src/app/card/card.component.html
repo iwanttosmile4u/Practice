@@ -1,0 +1,39 @@
+<div class="card">
+  <h2
+    [ngStyle]="{
+      color: card.title.length > 5 ? 'green' : 'black',
+      fontWeight: card.title.length > 7 ? 'bold' : 'normal'
+    }"
+  >
+    {{ card.title }}
+  </h2>
+  <p class="text">{{ card.text }}</p>
+  <p>{{ getInfo() }}</p>
+  <div class="buttons">
+    <button (click)="changeTitle()">Change title</button>
+    <button (click)="card.title = 'Inline title'">Change title inline</button>
+  </div>
+  <div>
+    <input
+      type="text"
+      [(ngModel)]="card.title"
+      (ngModelChange)="changeHandler()"
+    />
+  </div>
+  <!-- <div>
+    <input
+      type="text"
+      #myInput
+      (input)="inputHandler(myInput.value)"
+      [value]="title"
+    />
+  </div> -->
+  <div>
+    <img [src]="imgUrl" />
+    <br />
+    <button [disabled]="disabled">Enable</button>
+  </div>
+  <!-- <strong>Number: {{ number }}</strong>
+  <em>{{ array }}</em>
+  <pre>{{ obj | json }}</pre> -->
+</div>
