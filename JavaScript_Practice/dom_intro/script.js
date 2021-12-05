@@ -125,5 +125,5 @@
 
 // console.log(listItem.outerHTML);
 
-const listItem = document.querySelectorAll(".storage-item")[4];
-listItem.classList.add("active");
+// const listItem = document.querySelectorAll(".storage-item")[4];
+// listItem.classList.add("active");
