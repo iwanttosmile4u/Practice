@@ -60,10 +60,32 @@ div {
   border: 1px solid red;
 } */
 
-#top-div {
+/* #top-div {
   width: 300px;
   padding: 15px 20px;
   border: 1px solid red;
   box-sizing: content-box;
   background: khaki;
+} */
+
+/* .test-test {
+  color: #3333;
+} */
+body {
+  color: red;
+}
+p {
+  color: green;
+}
+.c1 {
+  color: blue;
+}
+.c2 {
+  color: yellow;
+}
+.c3 {
+  color: orange;
+}
+.c2.c3 {
+  color: black;
 }
