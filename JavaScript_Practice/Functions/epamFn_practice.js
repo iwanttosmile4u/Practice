@@ -12,12 +12,12 @@
 
 // Callback
 
-function callBack() {
-  console.log('I am callback');
-}
+// function callBack() {
+//   console.log('I am callback');
+// }
 
-function foo(callBack) {
-  console.log('I am function');
-  callBack();
-}
-foo(callBack);
+// function foo(callBack) {
+//   console.log('I am function');
+//   callBack();
+// }
+// foo(callBack);
