@@ -5,7 +5,7 @@
       <p><b>Description: </b>{{ post.body }}</p>
     </div>
     <div class="post-btns">
-      <my-button>Delete</my-button>
+      <my-button @click="$emit('remove', post)">Delete</my-button>
     </div>
   </div>
 </template>

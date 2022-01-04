@@ -102,3 +102,14 @@
 //   prompt("Enter your surname")
 // );
 // console.log(result);
+
+function narcissistic(value) {
+  let digits = value.toString().split('');
+  const arr = digits.map((digit) => Math.pow(digit, digits.length));
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return digits.length === sum.toString().length;
+}
+console.log(narcissistic(123));
