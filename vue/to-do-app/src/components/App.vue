@@ -2,7 +2,7 @@
   <div class="app">
     <Header />
     <task-form @add="addTask" />
-    <task-list :tasks="tasks" />
+    <task-list :tasks="tasks" :updateCheckbox="updateCheckbox" />
   </div>
 </template>
 
@@ -19,15 +19,19 @@ export default {
   data() {
     return {
       tasks: [
-        { id: 1, body: 'Complited hometasks' },
-        { id: 2, body: 'Read book' },
-        { id: 3, body: 'Go to the walk' }
+        { id: 11, body: 'Complited hometasks', checked: true },
+        { id: 223, body: 'Read book', checked: true },
+        { id: 34455, body: 'Go to the walk', checked: false }
       ]
     };
   },
   methods: {
     addTask(task) {
       this.tasks.push(task);
+    },
+    updateCheckbox(id) {
+      const index = this.tasks.findIndex((task) => task.id === id);
+      this.tasks[index].checked = !this.tasks[index].checked;
     }
   }
 };

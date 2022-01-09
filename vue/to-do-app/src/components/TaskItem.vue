@@ -1,8 +1,10 @@
 <template>
   <div class="task">
-    <!-- <input type="checkbox" id="scales" name="scales" checked />
-    <label for="scales">{{ post.body }}</label> -->
-    <p>New task: {{ task.body }}</p>
+    <my-checkbox
+      :checked="checked"
+      :onCheck="onCheckBoxChange"
+      :body="task.body"
+    />
   </div>
 </template>
 
@@ -12,6 +14,19 @@ export default {
     task: {
       type: Object,
       required: true
+    },
+    checked: {
+      type: Boolean,
+      default: () => false
+    },
+    onCheck: {
+      type: Function,
+      default: () => {}
+    }
+  },
+  methods: {
+    onCheckBoxChange() {
+      this.onCheck(this.task.id);
     }
   }
 };

@@ -1,6 +1,12 @@
 <template>
   <div>
-    <task-item v-for="task in tasks" :task="task" :key="task.id" />
+    <task-item
+      v-for="task in tasks"
+      :task="task"
+      :key="task.id"
+      :checked="task.checked"
+      :onCheck="updateCheckbox"
+    />
   </div>
 </template>
 
@@ -11,6 +17,10 @@ export default {
   props: {
     tasks: {
       type: Array,
+      required: true
+    },
+    updateCheckbox: {
+      type: Function,
       required: true
     }
   }
